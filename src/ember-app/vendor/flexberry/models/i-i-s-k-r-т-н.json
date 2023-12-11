@@ -1,0 +1,302 @@
+﻿{
+  "name": "IISKRТН",
+  "modelName": "i-i-s-k-r-т-н",
+  "className": "ТН",
+  "nameSpace": "IIS.KR",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаПоставки",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "имяМат",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерТН",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерТС",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "поставщик",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "принял",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "состав",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "цвет",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "записьМат",
+      "relatedTo": "i-i-s-k-r-запись-мат",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-k-r-сотрудники",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТНE",
+      "modelName": "i-i-s-k-r-т-н",
+      "attrs": [
+        {
+          "name": "цвет",
+          "caption": "Цвет",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаПоставки",
+          "caption": "Дата поставки",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "номерТС",
+          "caption": "Номер ТС",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "имяМат",
+          "caption": "Имя мат",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "поставщик",
+          "caption": "Поставщик",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "номерТН",
+          "caption": "Номер ТН",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "принял",
+          "caption": "Принял",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "состав",
+          "caption": "Состав",
+          "hidden": false,
+          "index": 7
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Материал",
+          "lookupValueField": "материал",
+          "relationName": "ЗаписьМат",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "материал",
+              "caption": "Материал",
+              "hidden": true,
+              "index": 9
+            }
+          ],
+          "index": 8,
+          "type": "standard",
+          "caption": "Запись мат",
+          "name": "записьМат",
+          "relatedTo": "i-i-s-k-r-запись-мат",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Должность",
+          "lookupValueField": "должность",
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "должность",
+              "caption": "Должность",
+              "hidden": true,
+              "index": 11
+            }
+          ],
+          "index": 10,
+          "type": "standard",
+          "caption": "Сотрудники",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-k-r-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ТНL",
+      "modelName": "i-i-s-k-r-т-н",
+      "attrs": [
+        {
+          "name": "цвет",
+          "caption": "Цвет",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаПоставки",
+          "caption": "Дата поставки",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "номерТС",
+          "caption": "Номер ТС",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "имяМат",
+          "caption": "Имя мат",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "поставщик",
+          "caption": "Поставщик",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "номерТН",
+          "caption": "Номер ТН",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "принял",
+          "caption": "Принял",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "состав",
+          "caption": "Состав",
+          "hidden": false,
+          "index": 7
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЗаписьМат",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "материал",
+              "caption": "Материал",
+              "hidden": false,
+              "index": 8
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Материал",
+          "name": "записьМат",
+          "relatedTo": "i-i-s-k-r-запись-мат",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "должность",
+              "caption": "Должность",
+              "hidden": false,
+              "index": 9
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Должность",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-k-r-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,57 @@
+﻿{
+  "applicationCaption": "KR",
+  "applicationTitle": "KR",
+  "items": [
+    {
+      "link": null,
+      "menuName": "k-r",
+      "caption": "KR",
+      "title": "KR",
+      "children": [
+        {
+          "link": "i-i-s-k-r-запись-мат-l",
+          "menuName": null,
+          "caption": "Запись мат",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-k-r-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-k-r-заказ-l",
+          "menuName": null,
+          "caption": "Заказ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-k-r-отпуск-мат-l",
+          "menuName": null,
+          "caption": "Отпуск мат",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-k-r-т-н-l",
+          "menuName": null,
+          "caption": "ТН",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-k-r-место-хран-l",
+          "menuName": null,
+          "caption": "Место хран",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

@@ -1,0 +1,127 @@
+﻿{
+  "name": "IISKRМестоХран",
+  "modelName": "i-i-s-k-r-место-хран",
+  "className": "МестоХран",
+  "nameSpace": "IIS.KR",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "имяМеста",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "расположение",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "записьМат",
+      "relatedTo": "i-i-s-k-r-запись-мат",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "МестоХранE",
+      "modelName": "i-i-s-k-r-место-хран",
+      "attrs": [
+        {
+          "name": "расположение",
+          "caption": "Расположение",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "имяМеста",
+          "caption": "Имя места",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Материал",
+          "lookupValueField": "материал",
+          "relationName": "ЗаписьМат",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "материал",
+              "caption": "Материал",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Запись мат",
+          "name": "записьМат",
+          "relatedTo": "i-i-s-k-r-запись-мат",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "МестоХранL",
+      "modelName": "i-i-s-k-r-место-хран",
+      "attrs": [
+        {
+          "name": "расположение",
+          "caption": "Расположение",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "имяМеста",
+          "caption": "Имя места",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЗаписьМат",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "материал",
+              "caption": "Материал",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Материал",
+          "name": "записьМат",
+          "relatedTo": "i-i-s-k-r-запись-мат",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

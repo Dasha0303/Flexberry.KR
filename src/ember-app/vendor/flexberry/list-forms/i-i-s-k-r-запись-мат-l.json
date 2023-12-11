@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-k-r-запись-мат-e",
+  "editForm": "i-i-s-k-r-запись-мат-e",
+  "external": false,
+  "caption": "Запись мат",
+  "name": "IISKRЗаписьМатL",
+  "className": "ЗаписьМатL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-r-запись-мат",
+      "modelProjection": "ЗаписьМатL"
+    }
+  ]
+}

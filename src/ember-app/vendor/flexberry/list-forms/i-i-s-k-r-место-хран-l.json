@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-k-r-место-хран-e",
+  "editForm": "i-i-s-k-r-место-хран-e",
+  "external": false,
+  "caption": "Место хран",
+  "name": "IISKRМестоХранL",
+  "className": "МестоХранL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-r-место-хран",
+      "modelProjection": "МестоХранL"
+    }
+  ]
+}

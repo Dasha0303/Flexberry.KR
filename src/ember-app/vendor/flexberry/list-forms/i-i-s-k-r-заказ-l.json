@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-k-r-заказ-e",
+  "editForm": "i-i-s-k-r-заказ-e",
+  "external": false,
+  "caption": "Заказ",
+  "name": "IISKRЗаказL",
+  "className": "ЗаказL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-r-заказ",
+      "modelProjection": "ЗаказL"
+    }
+  ]
+}

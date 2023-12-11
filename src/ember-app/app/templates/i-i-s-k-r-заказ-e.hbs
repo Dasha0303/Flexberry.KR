@@ -1,0 +1,115 @@
+<h3 class="ui header">{{t "forms.i-i-s-k-r-заказ-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.способДоставки
+      class=(if (v-get validationModel "способДоставки" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-r-заказ-e.способДоставки-caption")
+      data-test-i-i-s-k-r-заказ-e-способДоставки=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "способДоставки" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.фИОЗаказчика
+      class=(if (v-get validationModel "фИОЗаказчика" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-r-заказ-e.фИОЗаказчика-caption")
+      data-test-i-i-s-k-r-заказ-e-фИОЗаказчика=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "фИОЗаказчика" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.цвет
+      class=(if (v-get validationModel "цвет" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-r-заказ-e.цвет-caption")
+      data-test-i-i-s-k-r-заказ-e-цвет=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "цвет" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.колво
+      class=(if (v-get validationModel "колво" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-r-заказ-e.колво-caption")
+      data-test-i-i-s-k-r-заказ-e-колво=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "колво" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номерЗаказа
+      class=(if (v-get validationModel "номерЗаказа" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-r-заказ-e.номерЗаказа-caption")
+      data-test-i-i-s-k-r-заказ-e-номерЗаказа=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номерЗаказа" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.адресЗаказ
+      class=(if (v-get validationModel "адресЗаказ" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-r-заказ-e.адресЗаказ-caption")
+      data-test-i-i-s-k-r-заказ-e-адресЗаказ=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "адресЗаказ" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.материал
+      class=(if (v-get validationModel "материал" "isInvalid") "error")
+      label=(t "forms.i-i-s-k-r-заказ-e.материал-caption")
+      data-test-i-i-s-k-r-заказ-e-материал=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "материал" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-k-r-заказ-e.отпускМат-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.отпускМат
+      displayAttributeName="датаПроводки"
+      autocomplete=true
+      relationName="отпускМат"
+      projection="ОтпускМатL"
+      title=(t "forms.i-i-s-k-r-заказ-e.отпускМат-caption")
+      readonly=readonly
+      componentName="отпускМатLookup"
+      class=(if (v-get validationModel "отпускМат" "isInvalid") "error")
+      data-test-i-i-s-k-r-заказ-e-отпускМат=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "отпускМат" "message")}}
+  </div>
+</form>

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-k-r-т-н-e",
+  "editForm": "i-i-s-k-r-т-н-e",
+  "external": false,
+  "caption": "ТН",
+  "name": "IISKRТНL",
+  "className": "ТНL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-r-т-н",
+      "modelProjection": "ТНL"
+    }
+  ]
+}

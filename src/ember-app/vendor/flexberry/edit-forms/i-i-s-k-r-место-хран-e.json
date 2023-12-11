@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ЗаписьМат",
+      "projection": "ЗаписьМатL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Место хран",
+  "name": "IISKRМестоХранE",
+  "className": "МестоХранE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-r-место-хран",
+      "modelProjection": "МестоХранE"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-k-r-отпуск-мат-e",
+  "editForm": "i-i-s-k-r-отпуск-мат-e",
+  "external": false,
+  "caption": "Отпуск мат",
+  "name": "IISKRОтпускМатL",
+  "className": "ОтпускМатL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-r-отпуск-мат",
+      "modelProjection": "ОтпускМатL"
+    }
+  ]
+}
